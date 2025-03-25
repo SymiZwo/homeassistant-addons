@@ -1,0 +1,17 @@
+name: "My Custom AppDaemon"
+version: "1.0.0"
+slug: "appdaemon_custom"
+description: "A custom AppDaemon add-on using the official image"
+arch:
+  - amd64
+  - armv7
+  - armhf
+  - aarch64
+startup: "services"
+boot: "auto"
+ports:
+  5050/tcp: 5050
+map:
+  - config:rw
+  - ssl
+  - share
